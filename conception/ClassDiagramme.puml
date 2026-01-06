@@ -9,36 +9,19 @@ class User {
   +role : string
 }
 
+class Model {
+  +id : int
+  +name : string
+  +brand : string
+}
+
 class Car {
   +id : int
-  +model : string
-  +brand : string
   +pricePerDay : float
   +status : string
+  +year : int
 }
 
-class CarImage {
-  +id : int
-  +path : string
-}
-
-class Rental {
-  +id : int
-  +startDate : date
-  +endDate : date
-  +totalPrice : float
-}
-
-class Payment {
-  +id : int
-  +amount : float
-  +paymentDate : date
-  +method : string
-}
-
-User "1" --> "0..*" Rental : makes
-Rental "1" --> "1" Car : concerns
-Car "1" --> "0..*" CarImage : has
-Rental "1" --> "1" Payment : generates
-
+Model "0..*" -- "0..*" Car : defines
+User "1" -- "0..*" Car : owns
 @enduml

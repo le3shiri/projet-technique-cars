@@ -22,54 +22,36 @@ style: |
 
 ---
 
-## Context – Car Rental System
+## Context
+![w:800 Class Diagram](./images/2_tup_1.png)
 
-The **Car Rental System** is a web application designed to manage rental cars and allow users to search and filter vehicles based on different criteria such as **model**, **brand**, and **availability**.
-
-<img src="./images/2_tup.png">
 
 ---
 
-## Project Objectives
+## Technical Analysis - Needs
 
-- Understand the **generic design** of a CRUD application  
-- Separate **functional requirements** from **technical implementation**  
-- Practice CRUD operations:
-  - Create
-  - Read
-  - Update
-  - Delete
-- Apply a **structured methodology (2TUP)**
-
----
-
-## Technical Requirements – Analysis
-
-### Technologies Used
+<!-- ### Technologies Used -->
 
 1. **Database**: MySQL  
 2. **Architecture**: N-Tiers  
 3. **Framework**: Laravel  
 4. **Design Pattern**: MVC  
 5. **Template Engine**: Blade  
----
 6. **AJAX**: Dynamic search without page reload  
+---
 7. **Image Upload**: Car images management  
 8. **Multi-language**: Laravel localization  
 9. **Vite**: Modern build tool  
 10. **Preline UI**: UI components  
-11. **Tailwind CSS**: Utility-first CSS framework  
+11. **Lucide**: lucide library
+12. **Tailwind CSS**: Utility-first CSS framework  
+
 
 ---
 
-## Functional Analysis
-
-The application is based on two main actors:
-
-- **Visitor (Client)**
-- **Administrator**
-
-<img src="./images/image.png">
+## Conception
+![w:800 Class Diagram](./images/image.png)
+<!-- <img src="./images/image.png"> -->
 
 ---
 
@@ -110,17 +92,3 @@ The administrator can:
   - Un bouton “Ajouter” qui ouvre une modale pour créer un nouvel élément.
   - submission de formulaire avec ajax
   - Une barre de recherche filtrant des voiture par model.
----
-### Feature: Search / Filter Cars by Model
-
-- A search input field to filter cars by **model**
-- Real-time filtering using **AJAX**
-- Results update without page reload
-- Pagination applied to filtered results
-
----
-
-## Conclusion
-
-The **Car Rental System** provides an efficient way to manage rental vehicles and offers users a smooth experience through dynamic search and filtering features.
-

@@ -1,32 +1,25 @@
 @startuml
 left to right direction
+actor "Visiteur" as Visiteur
+actor "Admin" as Admin
 
-actor "Visiteur (Public)" as Visitor
-actor "Administrateur" as Admin
+package "CAR RENTAL" {
+    usecase "Consulter la page d'accueil" as UC_Accueil
+    usecase "Voir les détails d'une Voiture" as UC_Details
 
-rectangle "Car Rental System" {
-
-  usecase "Consulter la liste des voitures" as UC_List
-  usecase "Voir les détails d’une voiture" as UC_Details
-  usecase "Rechercher une voiture par modèle" as UC_Search
-  usecase "Filtrer les voitures" as UC_Filter
-
-  usecase "Gérer les voitures" as UC_CRUD
-  usecase "Ajouter une voiture" as UC_Add
-  usecase "Modifier une voiture" as UC_Edit
-  usecase "Supprimer une voiture" as UC_Delete
-  usecase "Filtrer par modèle" as UC_FilterAdmin
-
-  Visitor --> UC_List
-  UC_List ..> UC_Details : <<extend>>
-  UC_List ..> UC_Search : <<extend>>
-  UC_List ..> UC_Filter : <<extend>>
-
-  Admin --> UC_CRUD
-  UC_CRUD ..> UC_Add : <<extend>>
-  UC_CRUD ..> UC_Edit : <<extend>>
-  UC_CRUD ..> UC_Delete : <<extend>>
-  UC_CRUD ..> UC_FilterAdmin : <<extend>>
+    usecase "Gérer les Voitures(CRUD)" as UC_CRUD
+    usecase "Filtrer les Voitures" as UC_Filtrer
+    usecase "Rechercher des Voitures" as UC_Rechercher
 }
 
+' Relations Visiteur
+Visiteur -- UC_Accueil
+UC_Accueil <.. UC_Details : <<extend>>
+
+' Relations Admin
+Admin -- UC_CRUD
+UC_CRUD <.. UC_Filtrer : <<extend>>
+UC_CRUD <.. UC_Rechercher : <<extend>>
+
+@endum
 @enduml
