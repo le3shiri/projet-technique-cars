@@ -16,6 +16,10 @@ style: |
 # Car Rental System  
 ### Vehicle rental management application
 
+## Devlopped By : Ayman el Achiri
+## Supervised By : M. Fouad Essarraj
+## Date : 05/01/2026 
+
 ---
 
 ## Context – Car Rental System
