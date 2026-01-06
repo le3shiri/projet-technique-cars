@@ -1,0 +1,44 @@
+@startuml
+skinparam classAttributeIconSize 0
+
+class User {
+  +id : int
+  +name : string
+  +email : string
+  +password : string
+  +role : string
+}
+
+class Car {
+  +id : int
+  +model : string
+  +brand : string
+  +pricePerDay : float
+  +status : string
+}
+
+class CarImage {
+  +id : int
+  +path : string
+}
+
+class Rental {
+  +id : int
+  +startDate : date
+  +endDate : date
+  +totalPrice : float
+}
+
+class Payment {
+  +id : int
+  +amount : float
+  +paymentDate : date
+  +method : string
+}
+
+User "1" --> "0..*" Rental : makes
+Rental "1" --> "1" Car : concerns
+Car "1" --> "0..*" CarImage : has
+Rental "1" --> "1" Payment : generates
+
+@enduml

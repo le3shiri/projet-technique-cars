@@ -22,7 +22,7 @@ style: |
 
 The **Car Rental System** is a web application designed to manage rental cars and allow users to search and filter vehicles based on different criteria such as **model**, **brand**, and **availability**.
 
-<img src="./images/context.png">
+<img src="./images/2_tup.png">
 
 ---
 
@@ -65,7 +65,7 @@ The application is based on two main actors:
 - **Visitor (Client)**
 - **Administrator**
 
-<img src="./images/usecase.png">
+<img src="./images/image.png">
 
 ---
 
@@ -99,12 +99,13 @@ The administrator can:
 
 ## System Design – Class Diagram
 
-![w:350 Class Diagram](./images/class-diagram.png)
+![w:350 Class Diagram](./images/class.png)
 
 ---
-
 ## Live Coding Topic
-
+  - Un bouton “Ajouter” qui ouvre une modale pour créer un nouvel élément.
+  - Une barre de recherche filtrant des voiture par model.
+---
 ### Feature: Search / Filter Cars by Model
 
 - A search input field to filter cars by **model**
