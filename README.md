@@ -104,6 +104,7 @@ The administrator can:
 ---
 ## Live Coding Topic
   - Un bouton “Ajouter” qui ouvre une modale pour créer un nouvel élément.
+  - submission de formulaire avec ajax
   - Une barre de recherche filtrant des voiture par model.
 ---
 ### Feature: Search / Filter Cars by Model
