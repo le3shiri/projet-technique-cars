@@ -1,0 +1,4 @@
+id,name,email,password,role
+1,Aymane,aymane@gmail.com,$2y$10$hashadmin,admin
+2,Sara,sara@gmail.com,$2y$10$hashuser,user
+3,Yassine,yassine@gmail.com,$2y$10$hashuser,user

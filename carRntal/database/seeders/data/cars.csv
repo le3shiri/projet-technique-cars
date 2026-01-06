@@ -1,0 +1,5 @@
+id,user_id,price_per_day,status,year
+1,1,300.00,available,2022
+2,1,450.00,rented,2021
+3,2,500.00,available,2023
+4,3,350.00,maintenance,2020
