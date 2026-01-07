@@ -14,8 +14,9 @@ return new class extends Migration
         Schema::create('cars', function (Blueprint $table) {
     $table->id();
 
- 
-
+    $table->foreignId('model_id')
+          ->constrained('models')
+          ->onDelete('cascade');
     $table->foreignId('user_id')
           ->constrained('users')
           ->onDelete('cascade');
@@ -23,6 +24,7 @@ return new class extends Migration
     $table->decimal('price_per_day', 10, 2);
     $table->string('status');
     $table->integer('year');
+    $table->string('image')->nullable();
 
     $table->timestamps();
 });

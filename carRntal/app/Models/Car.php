@@ -13,5 +13,11 @@ class Car extends Model
         'price_per_day',
         'status',
         'year',
+        'image',
     ];
+
+    public function model()
+    {
+        return $this->belongsTo(Models::class, 'model_id');
+    }
 }
