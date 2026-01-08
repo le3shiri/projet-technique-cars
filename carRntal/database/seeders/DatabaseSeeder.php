@@ -64,7 +64,7 @@ class DatabaseSeeder extends Seeder
                         ['id' => $row['id']],
                         [
                             'user_id' => $row['user_id'],
-                            'model_id' => $modelIds[array_rand($modelIds)],
+                            'model_id' => $row['model_id'],
                             'price_per_day' => $row['price_per_day'],
                             'status' => $row['status'],
                             'year' => $row['year'],
