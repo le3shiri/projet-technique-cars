@@ -1,5 +1,5 @@
-id,user_id,price_per_day,status,year,image
-1,1,300.00,available,2022,images/car1.jpg
-2,1,450.00,rented,2021,images/car2.jpg
-3,2,500.00,available,2023,images/car3.jpg
-4,3,350.00,maintenance,2020,images/car4.jpg
+id,user_id,model_id,price_per_day,status,year,image
+1,1,1,300.00,available,2022,images/car1.jpg
+2,1,2,450.00,rented,2021,images/car2.jpg
+3,2,3,500.00,available,2023,images/car3.jpg
+4,3,4,350.00,maintenance,2020,images/car4.jpg
