@@ -18,6 +18,6 @@ class Car extends Model
 
     public function model()
     {
-        return $this->belongsTo(Models::class, 'model_id');
+        return $this->belongsToMany(Models::class, 'model_id');
     }
 }
